@@ -1,8 +1,7 @@
-
 SUPPORTED_COUPON_CODES = {
-        "SAVE10": "10% off for all customers",
-        "SAVE20": "20% off exclusively for premium customers",
-    }
+    "SAVE10": "10% off for all customers",
+    "SAVE20": "20% off exclusively for premium customers",
+}
 
 
 def calculate_discounted_price(price, customer_type, coupon_code=None, is_holiday=False):
@@ -21,3 +20,4 @@ def calculate_discounted_price(price, customer_type, coupon_code=None, is_holida
     if is_holiday:
         price = price * 0.95
     return round(price, 2)
+# <file ends with a single newline>
